@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  margin: 10px;
+}
+.navbar {
+  padding: 15px;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+#home {
+  margin: 10px;
+}
+#dynamic-text {
+  transition: opacity 0.5s ease;
+}
+#dynamic-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.bi{
+    font-size: 30px;
+    color: #fff;
+}
+.profile {
+  object-fit: cover;
+  height: 350px;
+  width: 300px;
+  border-radius: 10% 0% 10% 0%;
+  box-shadow: 5px 5px 10px 10px red;
+}
+.img{
+    margin:25px 0px;
+}
+.download{
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.download:hover{
+    color: #fff;
+}
