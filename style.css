@@ -9,9 +9,14 @@ body {
 }
 .navbar {
   padding: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .nav-link:hover {
+  color: #dc3545 !important;
 }
 /* home */
 #home {
@@ -335,3 +340,14 @@ textarea.resize-y {
   font-size: 0.9rem;
   font-weight: 600;
 }
+.site-footer {
+    background-color: #1a1a1a;
+    color: #eee;
+    border-top: 1px #ccc solid;
+    padding:20px 0px;
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    font-size: 0.9em;
+  }
