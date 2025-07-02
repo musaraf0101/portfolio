@@ -192,7 +192,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
 }
 .icon-text-group i {
-  width: 24px;
+  width: 34px;
   text-align: center;
   margin-right: 10px;
   color: #dc3545;
@@ -202,6 +202,9 @@ body {
 }
 textarea.resize-y {
   resize: vertical;
+}
+.contact-icon{
+  font-size: 30px;
 }
 /* projects */
 #project {
@@ -340,6 +343,7 @@ textarea.resize-y {
   font-size: 0.9rem;
   font-weight: 600;
 }
+/* footer */
 .site-footer {
     background-color: #1a1a1a;
     color: #eee;
