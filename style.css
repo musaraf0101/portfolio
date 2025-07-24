@@ -43,6 +43,18 @@ body {
   font-size: 30px;
   color: #fff;
 }
+.bi-linkedin:hover{
+  color: #0077b5;
+}
+.bi-facebook:hover{
+  color: #3b5998;
+}
+.bi-github:hover {
+  color: #b5acac;
+}
+.bi-instagram:hover {
+  color: #e1306c;
+}
 .profile {
   object-fit: cover;
   height: 350px;
