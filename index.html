@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -286,7 +286,6 @@
                           ></div>
                         </div>
                       </div>
-
                     </div>
                     <div
                       class="tab-pane fade"
@@ -517,9 +516,7 @@
                       <div class="background-item">
                         <p class="text-red-custom mb-1">2023 - Present</p>
                         <h5>AAT</h5>
-                        <p class="text-secondary mb-1">
-                          AAT - SL
-                        </p>
+                        <p class="text-secondary mb-1">AAT - SL</p>
                         <p class="text-muted"></p>
                       </div>
                       <div class="background-item">
@@ -541,7 +538,7 @@
                       aria-labelledby="experience-tab"
                     >
                       <div class="background-item">
-                        <p class="text-red-custom mb-1">2025/06 - present</p>
+                        <p class="text-red-custom mb-1">2025/06 - 2026/03</p>
                         <h5>Software developer intern</h5>
                         <p class="text-secondary mb-1">servand</p>
                         <p class="text-muted">
@@ -583,6 +580,40 @@
             </div>
           </div>
           <div class="row g-4" id="project-grid">
+            <div class="col-12 col-md-6 col-lg-4" data-category="web-app">
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src=""
+                    alt="img not found 404 - on going project"
+                    class="project-image"
+                  />
+                </div>
+                <h3 class="project-title">Room Sharing Platform</h3>
+                <p class="project-description">
+                  A full-stack room sharing marketplace where landlords post
+                  listings and seekers post room requests, with 30-day
+                  auto-expiration, advanced multi-dimensional filtering, and
+                  Cloudinary-powered multi-image uploads. Built with
+                  production-grade security featuring JWT authentication, bcrypt
+                  hashing, rate limiting, Helmet headers, and role-based access
+                  control across all API endpoints.
+                </p>
+                <div class="project-tags">
+                  <span class="tag btn btn-danger">React js</span>
+                  <span class="tag btn btn-danger">Node js</span>
+                  <span class="tag btn btn-danger">Express js</span>
+                  <span class="tag btn btn-danger">MongoDB</span>
+                  <span class="tag btn btn-danger">Cloudinary</span>
+                  <span class="tag btn btn-danger">Tailwind CSS</span>
+                </div>
+                <a
+                  href="https://github.com/musaraf0101/room_sharing.git"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
             <div class="col-12 col-md-6 col-lg-4" data-category="web-app">
               <div class="project-card">
                 <div class="project-image-container">
@@ -688,41 +719,17 @@
                 </div>
                 <h3 class="project-title">Hotel POS</h3>
                 <p class="project-description">
-                 A hotel POS system designed according to client requirements, 
-                 allowing customers to order food without logging in by selecting their table. 
-                 Orders are sent directly to the cashier dashboard for billing, where bills 
-                 can be printed and marked as paid. The admin role has full access to daily 
-                 sales, expenses, employee details, inventory, purchases, and menu management
+                  A hotel POS system designed according to client requirements,
+                  allowing customers to order food without logging in by
+                  selecting their table. Orders are sent directly to the cashier
+                  dashboard for billing, where bills can be printed and marked
+                  as paid. The admin role has full access to daily sales,
+                  expenses, employee details, inventory, purchases, and menu
+                  management
                 </p>
                 <div class="project-tags">
                   <span class="tag btn btn-danger">React js</span>
                   <span class="tag btn btn-danger">Tailwind css</span>
-                  <span class="tag btn btn-danger">Node js</span>
-                  <span class="tag btn btn-danger">Express js</span>
-                  <span class="tag btn btn-danger">MongoDB</span>
-                </div>
-                <a
-                  href="https://github.com/musaraf0101/hotel_pos.git"
-                  target="_blank"
-                  ><i class="bi bi-github"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" data-category="web-app">
-              <div class="project-card">
-                <div class="project-image-container">
-                  <img
-                    src=""
-                    alt="img not found 404 - on going project"
-                    class="project-image"
-                  />
-                </div>
-                <h3 class="project-title">Smart-Inventory-Supply-Chain-Management</h3>
-                <p class="project-description">
-                 On-going
-                </p>
-                <div class="project-tags">
-                  <span class="tag btn btn-danger">React js</span>
                   <span class="tag btn btn-danger">Node js</span>
                   <span class="tag btn btn-danger">Express js</span>
                   <span class="tag btn btn-danger">MongoDB</span>
@@ -930,7 +937,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
         const navbarCollapse = document.getElementById(
-          "navbarSupportedContent"
+          "navbarSupportedContent",
         );
 
         navLinks.forEach(function (link) {
