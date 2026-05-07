@@ -853,7 +853,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const filterButtons = document.querySelectorAll(".filter-button");
-        const techCards = document.querySelectorAll("#tech-grid .col-");
+        const projectCards = document.querySelectorAll("#project-grid [data-category]");
 
         filterButtons.forEach((button) => {
           button.addEventListener("click", function () {
@@ -862,26 +862,9 @@
 
             const filter = this.dataset.filter;
 
-            techCards.forEach((card) => {
+            projectCards.forEach((card) => {
               const category = card.dataset.category;
-              const techName = card.querySelector(".tech-name").textContent;
-
-              if (filter === "all") {
-                card.style.display = "block";
-              } else if (filter === "language") {
-                const allowedLanguages = [
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "PHP",
-                  "Python",
-                ];
-                if (allowedLanguages.includes(techName)) {
-                  card.style.display = "block";
-                } else {
-                  card.style.display = "none";
-                }
-              } else if (category === filter) {
+              if (filter === "all" || category === filter) {
                 card.style.display = "block";
               } else {
                 card.style.display = "none";
